@@ -1,0 +1,66 @@
+.action-row {
+  margin-top: 28rpx;
+}
+
+.ccp-card {
+  padding: 26rpx;
+  border-color: rgba(159, 39, 32, 0.22);
+  background: #fff6eb;
+}
+
+.ccp-title {
+  color: #8b0f0f;
+  font-size: 30rpx;
+  font-weight: 900;
+}
+
+.ccp-line {
+  margin-top: 10rpx;
+  color: #5e4337;
+  line-height: 1.7;
+}
+
+.record-list {
+  display: grid;
+  gap: 16rpx;
+}
+
+.record-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18rpx;
+  padding: 24rpx;
+}
+
+.record-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.record-title-main {
+  color: #2f211d;
+  font-size: 28rpx;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.record-title-sub {
+  margin-top: 4rpx;
+  color: #2f211d;
+  font-size: 28rpx;
+  font-weight: 900;
+  line-height: 1.35;
+  word-break: break-all;
+}
+
+.record-meta {
+  margin-top: 8rpx;
+  color: #80675c;
+  font-size: 24rpx;
+}
+
+.record-card .status {
+  flex: 0 0 auto;
+  margin-top: 2rpx;
+}

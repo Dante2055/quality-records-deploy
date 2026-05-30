@@ -1,0 +1,80 @@
+<view class="print-shell">
+  <view class="print-toolbar">
+    <button class="secondary-btn toolbar-btn" bindtap="back">返回</button>
+    <button class="primary-btn toolbar-btn" bindtap="exportXls">导出表格</button>
+  </view>
+
+  <view class="a4-page">
+    <view class="print-title">阳江市桃金娘豆豉有限公司</view>
+    <view class="print-subtitle">质量安全管理记录</view>
+    <view class="print-form-name">{{record.templateName}}</view>
+
+    <view class="print-meta">
+      <view>记录编号：{{record.id}}</view>
+      <view>记录日期：{{record.recordDate || '-'}}</view>
+      <view>状态：{{record.statusText}}</view>
+      <view>{{fillerLabel}}：{{record.data.filledBy || record.createdByName || record.createdBy || '-'}}</view>
+      <view wx:if="{{record.correctionOf}}">原记录编号：{{record.correctionOf}}</view>
+    </view>
+
+    <view class="print-table">
+      <view wx:for="{{displayFields}}" wx:key="name">
+        <view wx:if="{{item.categoryTitle}}" class="print-category">{{item.categoryTitle}}</view>
+        <view wx:if="{{item.type === 'healthChecks'}}" class="print-health-block">
+          <view class="print-health-title">{{item.label}}</view>
+          <view class="print-health-table">
+            <view class="print-health-head">
+              <text>检查时间</text>
+              <text>检查单位</text>
+              <text>检查项目</text>
+              <text>检查结果</text>
+              <text>采取措施</text>
+              <text>备注</text>
+            </view>
+            <view class="print-health-row" wx:for="{{item.healthChecks}}" wx:for-item="row" wx:key="index">
+              <text>{{row.checkTime || '-'}}</text>
+              <text>{{row.checkUnit || '-'}}</text>
+              <text>{{row.checkItem || '-'}}</text>
+              <text>{{row.checkResult || '-'}}</text>
+              <text>{{row.measureTaken || '-'}}</text>
+              <text>{{row.remarks || '-'}}</text>
+            </view>
+            <view class="print-health-row" wx:if="{{!item.healthChecks.length}}">
+              <text>-</text>
+              <text>-</text>
+              <text>-</text>
+              <text>-</text>
+              <text>-</text>
+              <text>-</text>
+            </view>
+          </view>
+        </view>
+        <view class="print-row" wx:else>
+          <view class="print-label">{{item.label}}</view>
+          <view class="print-value" wx:if="{{item.type !== 'image'}}">{{item.value || '-'}}</view>
+          <view class="print-value" wx:else>
+            <view wx:if="{{item.images.length}}" class="print-image-list">
+              <image
+                class="print-image"
+                wx:for="{{item.images}}"
+                wx:for-item="image"
+                wx:key="path"
+                src="{{image.path}}"
+                mode="aspectFit"
+              />
+            </view>
+            <text wx:else>-</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="sign-row">
+      <view>{{fillerLabel}}签名：</view>
+      <view>审核人签名：</view>
+      <view>日期：</view>
+    </view>
+  </view>
+
+  <view class="print-note">点击“导出表格”后会生成电子表格文件并打开预览；可在预览页右上角菜单保存或分享。</view>
+</view>

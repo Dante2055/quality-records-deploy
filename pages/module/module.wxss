@@ -1,0 +1,30 @@
+.form-list {
+  display: grid;
+  gap: 18rpx;
+}
+
+.list-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26rpx;
+}
+
+.list-title {
+  color: #2f211d;
+  font-size: 32rpx;
+  font-weight: 900;
+}
+
+.list-subtitle,
+.source-line {
+  margin-top: 8rpx;
+  color: #80675c;
+  font-size: 24rpx;
+}
+
+.list-arrow {
+  color: #8b0f0f;
+  font-size: 56rpx;
+  line-height: 1;
+}
