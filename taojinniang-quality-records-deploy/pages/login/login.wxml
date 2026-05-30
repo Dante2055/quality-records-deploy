@@ -1,0 +1,28 @@
+<view class="page auth-page">
+  <view class="brand-card">
+    <image class="brand-logo" src="/images/logo.png" mode="aspectFill" />
+    <view>
+      <view class="brand-title">桃金娘质量安全管理记录系统</view>
+      <view class="brand-subtitle">微信小程序版</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="tag">系统登录</view>
+    <view class="page-title">欢迎使用</view>
+    <view class="page-subtitle">请输入用户名和密码后继续填写质量安全记录。</view>
+  </view>
+
+  <view class="login-card card">
+    <view class="login-field">
+      <text class="field-label">用户名</text>
+      <input class="login-input" value="{{username}}" bindinput="onUsername" placeholder="请输入用户名" />
+    </view>
+    <view class="login-field">
+      <text class="field-label">密码</text>
+      <input class="login-input" password value="{{password}}" bindinput="onPassword" placeholder="请输入密码" />
+    </view>
+    <button class="primary-btn login-main-btn" bindtap="login">登录</button>
+    <view class="muted">新用户首次登录后，请及时在“我的”页面修改密码。</view>
+  </view>
+</view>

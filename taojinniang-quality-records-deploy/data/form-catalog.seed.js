@@ -1,0 +1,3365 @@
+// Auto-generated from data/form-catalog.seed.json for WeChat Mini Program runtime.
+module.exports = {
+  "version": "2026-05-16",
+  "recordStatuses": [
+    "draft",
+    "submitted",
+    "approved",
+    "rejected"
+  ],
+  "commonFields": [
+    {
+      "name": "recordDate",
+      "label": "记录日期",
+      "type": "date",
+      "required": true
+    },
+    {
+      "name": "title",
+      "label": "记录标题",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "responsiblePerson",
+      "label": "责任人",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "remarks",
+      "label": "备注",
+      "type": "textarea",
+      "required": false
+    }
+  ],
+  "modules": [
+    {
+      "slug": "supplier-purchase",
+      "name": "供应商与采购",
+      "sortOrder": 1,
+      "forms": [
+        {
+          "slug": "supplier-evaluation",
+          "name": "供方评价表",
+          "sortOrder": 1,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "supplierName",
+              "label": "供方/供应商",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "contactPerson",
+              "label": "联系人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "contactPhone",
+              "label": "联系电话",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "manufacturer",
+              "label": "生产厂家",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "evaluationResult",
+              "label": "评价结论",
+              "type": "select",
+              "required": false,
+              "options": [
+                "合格供方",
+                "不合格供方"
+              ]
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 0,
+          "entryMode": "single_entry"
+        },
+        {
+          "slug": "approved-supplier-list",
+          "name": "合格供方名录",
+          "sortOrder": 2,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "supplierName",
+              "label": "供方/供应商",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "licenseNo",
+              "label": "生产许可证号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "creditCode",
+              "label": "统一社会信用代码",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "firstListedDate",
+              "label": "首次列入时间",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "contactPerson",
+              "label": "联系人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "contactPhone",
+              "label": "联系电话",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 1,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "purchase-plan",
+          "name": "采购计划",
+          "sortOrder": 3,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "materialName",
+              "label": "原辅料名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "unit",
+              "label": "单位",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "quantity",
+              "label": "数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "unitPrice",
+              "label": "单价",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "supplierName",
+              "label": "供方/供应商",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "deliveryDate",
+              "label": "运输日期",
+              "type": "date",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 2,
+          "entryMode": "single_entry"
+        },
+        {
+          "slug": "raw-material-purchase-ledger",
+          "name": "原辅材料采购台帐",
+          "sortOrder": 4,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "quantity",
+              "label": "数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productionDateOrBatch",
+              "label": "生产日期/批号",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "shelfLife",
+              "label": "保质期",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "supplierName",
+              "label": "供方/供应商",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "purchaseDate",
+              "label": "采购日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "inspector",
+              "label": "检验员",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 3,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "incoming-inspection-record",
+          "name": "进货查验记录",
+          "sortOrder": 5,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "purchaseProductName",
+              "label": "采购产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "batchNo",
+              "label": "批号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "purchaseQuantity",
+              "label": "进货数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "supplierName",
+              "label": "供方/供应商",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "manufacturer",
+              "label": "生产厂家",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "inspectionResult",
+              "label": "查验结果",
+              "type": "select",
+              "required": false,
+              "options": [
+                "合格",
+                "不合格"
+              ]
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 20,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "raw-material-acceptance",
+          "name": "原料验收记录",
+          "sortOrder": 6,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "itemName",
+              "label": "品名",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "manufacturer",
+              "label": "生产厂家",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "incomingDate",
+              "label": "进货日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "productionDateOrBatch",
+              "label": "生产日期/批号",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "quantity",
+              "label": "数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "externalInspectionResult",
+              "label": "外检情况",
+              "type": "select",
+              "required": false,
+              "options": [
+                "符合",
+                "不符合"
+              ]
+            },
+            {
+              "name": "selfInspectionResult",
+              "label": "自检情况",
+              "type": "select",
+              "required": false,
+              "options": [
+                "符合",
+                "不符合"
+              ]
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 21,
+          "entryMode": "ledger_entry"
+        }
+      ]
+    },
+    {
+      "slug": "production",
+      "name": "生产过程",
+      "sortOrder": 2,
+      "forms": [
+        {
+          "slug": "production-record",
+          "name": "产品生产记录",
+          "sortOrder": 1,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "productionDate",
+              "label": "生产日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "department",
+              "label": "部门",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productionQuantity",
+              "label": "生产数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "materialName",
+              "label": "原辅料名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "materialBatchNo",
+              "label": "原辅料生产日期/批号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "materialInputQuantity",
+              "label": "投入量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "feedingTime",
+              "label": "投料时间",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "operator",
+              "label": "操作人",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 4,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "critical-control-point-record",
+          "name": "生产过程关键控制点记录",
+          "sortOrder": 2,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "checkTime",
+              "label": "检查时间",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "controlPointName",
+              "label": "关键控制点名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "processRequirement",
+              "label": "工艺要求及控制参数",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "actualResult",
+              "label": "实际结果",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "operationStatus",
+              "label": "运行情况",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "abnormalHandling",
+              "label": "异常处置措施",
+              "type": "textarea",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 5,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "process-inspection-record",
+          "name": "生产过程检验记录",
+          "sortOrder": 3,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "productionDate",
+              "label": "生产日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "shift",
+              "label": "班次",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "shape",
+              "label": "形状",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "color",
+              "label": "色泽",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "taste",
+              "label": "滋味与口感",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "texture",
+              "label": "组织",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "impurity",
+              "label": "杂质",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "inspector",
+              "label": "检验员",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 9,
+          "entryMode": "ledger_entry"
+        }
+      ]
+    },
+    {
+      "slug": "inspection-retention",
+      "name": "检验与留样",
+      "sortOrder": 3,
+      "forms": [
+        {
+          "slug": "finished-product-inspection-ledger",
+          "name": "产品出厂检验报告记录",
+          "sortOrder": 1,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "foodName",
+              "label": "食品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "quantity",
+              "label": "数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productionDate",
+              "label": "生产日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "expiryDate",
+              "label": "过期日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "batchNo",
+              "label": "批号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "standard",
+              "label": "执行标准",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "inspectionMethod",
+              "label": "检验方式",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "inspectionConclusion",
+              "label": "检验结论",
+              "type": "select",
+              "required": false,
+              "options": [
+                "合格",
+                "不合格"
+              ]
+            },
+            {
+              "name": "inspector",
+              "label": "检验员",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "reportNo",
+              "label": "报告编号",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 10,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "entrusted-inspection-register",
+          "name": "委托出厂检验登记表",
+          "sortOrder": 2,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "entrustedPartyName",
+              "label": "被委托方名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "agreementNo",
+              "label": "协议编号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "standard",
+              "label": "执行标准",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "inspectionItems",
+              "label": "检验项目",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "batchNo",
+              "label": "批号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "sampleQuantity",
+              "label": "样品量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "reportNo",
+              "label": "报告编号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "inspectionConclusion",
+              "label": "检验结论",
+              "type": "select",
+              "required": false,
+              "options": [
+                "合格",
+                "不合格"
+              ]
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 11,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "sample-retention-record",
+          "name": "产品留样记录",
+          "sortOrder": 3,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "sampleNo",
+              "label": "留样编号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "sampleName",
+              "label": "样品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "batchNo",
+              "label": "批号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "retentionTime",
+              "label": "留样时间",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "shelfLife",
+              "label": "保质期",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "retentionQuantity",
+              "label": "留样数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "sampleStatus",
+              "label": "样品状态",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "retainedBy",
+              "label": "留样人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "clearTime",
+              "label": "清除时间",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 12,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "inspection-report",
+          "name": "出厂检验报告",
+          "sortOrder": 4,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "batchQuantity",
+              "label": "批量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productionDate",
+              "label": "生产日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "batchNo",
+              "label": "批号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "sampleQuantity",
+              "label": "样品量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "standard",
+              "label": "执行标准",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "inspectionConclusion",
+              "label": "检验结论",
+              "type": "select",
+              "required": false,
+              "options": [
+                "合格",
+                "不合格"
+              ]
+            },
+            {
+              "name": "inspector",
+              "label": "检验员",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 22,
+          "entryMode": "single_entry"
+        },
+        {
+          "slug": "instant-douchi-inspection-report",
+          "name": "出厂检验报告（即食豆豉专用）",
+          "sortOrder": 5,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "batchQuantity",
+              "label": "批量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productionDate",
+              "label": "生产日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "batchNo",
+              "label": "批号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "sampleQuantity",
+              "label": "样品量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "standard",
+              "label": "执行标准",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "inspectionConclusion",
+              "label": "检验结论",
+              "type": "select",
+              "required": false,
+              "options": [
+                "合格",
+                "不合格"
+              ]
+            },
+            {
+              "name": "inspector",
+              "label": "检验员",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 23,
+          "entryMode": "single_entry"
+        },
+        {
+          "slug": "nonconforming-product-disposal",
+          "name": "不合格产品处理记录",
+          "sortOrder": 6,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "reportNo",
+              "label": "报告编号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productionShift",
+              "label": "生产班次",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productionDate",
+              "label": "生产日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "quantity",
+              "label": "数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "nonconformingItem",
+              "label": "不合格项目",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "causeAnalysis",
+              "label": "原因分析",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "disposalMeasure",
+              "label": "处理措施",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "disposalResult",
+              "label": "处理结果",
+              "type": "textarea",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 26,
+          "entryMode": "ledger_entry"
+        }
+      ]
+    },
+    {
+      "slug": "equipment-environment",
+      "name": "设备设施与环境卫生",
+      "sortOrder": 4,
+      "forms": [
+        {
+          "slug": "cleaning-disinfection-record",
+          "name": "设备设施清洗消毒记录",
+          "sortOrder": 1,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "operationDate",
+              "label": "日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "methodOrInstructionNo",
+              "label": "作业方式/作业指导书编号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "equipmentName",
+              "label": "设备名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "processName",
+              "label": "设备工序名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "disinfectantName",
+              "label": "消毒液名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "usageQuantity",
+              "label": "使用数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "concentration",
+              "label": "消毒液浓度",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "acceptanceResult",
+              "label": "验收情况及处置",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "operator",
+              "label": "操作人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "acceptor",
+              "label": "验收人",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 7,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "equipment-maintenance-record",
+          "name": "设备设施维修（保养）记录",
+          "sortOrder": 2,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "equipmentName",
+              "label": "设备名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "equipmentNo",
+              "label": "设备编号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "maintenanceCycle",
+              "label": "保养周期",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "lastMaintenanceDate",
+              "label": "上次保养时间",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "currentMaintenanceDate",
+              "label": "本次保养时间",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "operator",
+              "label": "操作人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "maintenanceItems",
+              "label": "维修（保养）项目",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "result",
+              "label": "结果",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "acceptor",
+              "label": "验收人",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 8,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "measuring-equipment-ledger",
+          "name": "设备（计量器具）台账",
+          "sortOrder": 3,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "equipmentNo",
+              "label": "设备编号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "equipmentName",
+              "label": "设备名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "manufacturer",
+              "label": "生产厂家",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "measurementRange",
+              "label": "测量范围",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "accuracy",
+              "label": "设备精度",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "purchaseDate",
+              "label": "采购日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "startDate",
+              "label": "启用日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "equipmentStatus",
+              "label": "设备状态",
+              "type": "select",
+              "required": false,
+              "options": [
+                "正常",
+                "停用",
+                "维修中"
+              ]
+            },
+            {
+              "name": "location",
+              "label": "使用场所",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "calibrationDate",
+              "label": "检定日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "validUntil",
+              "label": "有效截止日期",
+              "type": "date",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 13,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "factory-environment-sanitation-check",
+          "name": "厂区环境卫生检查记录",
+          "sortOrder": 4,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "checkDate",
+              "label": "检查日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "item",
+              "label": "项目",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "requirement",
+              "label": "要求",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "isQualified",
+              "label": "是否合格",
+              "type": "select",
+              "required": false,
+              "options": [
+                "合格",
+                "不合格"
+              ]
+            },
+            {
+              "name": "problem",
+              "label": "存在问题",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "correctiveAction",
+              "label": "纠正措施及结果",
+              "type": "textarea",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 14,
+          "entryMode": "single_entry"
+        },
+        {
+          "slug": "production-site-equipment-sanitation-check",
+          "name": "生产场所及设备设施卫生检查记录表",
+          "sortOrder": 5,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "checkDate",
+              "label": "检查日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "area",
+              "label": "区域",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "item",
+              "label": "项目",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "result",
+              "label": "结果",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "correction",
+              "label": "问题纠正",
+              "type": "textarea",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 15,
+          "entryMode": "single_entry"
+        },
+        {
+          "slug": "ozone-generator-use-record",
+          "name": "臭氧发生器使用记录",
+          "sortOrder": 6,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "disinfectionLocation",
+              "label": "消毒地点",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "startTime",
+              "label": "开始时间",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "endTime",
+              "label": "结束时间",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "actualHours",
+              "label": "实际使用时间(h)",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remainingHours",
+              "label": "剩余使用时间(h)",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "operator",
+              "label": "操作人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "reviewer",
+              "label": "审核人",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 18,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "uv-lamp-use-record",
+          "name": "紫外灯使用记录",
+          "sortOrder": 7,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "disinfectionLocation",
+              "label": "消毒地点",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "startTime",
+              "label": "开始时间",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "endTime",
+              "label": "结束时间",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "actualHours",
+              "label": "实际使用时间(h)",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remainingHours",
+              "label": "剩余使用时间(h)",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "operator",
+              "label": "操作人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "reviewer",
+              "label": "审核人",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 19,
+          "entryMode": "ledger_entry"
+        }
+      ]
+    },
+    {
+      "slug": "quality-routine",
+      "name": "质量安全日/周/月管理",
+      "sortOrder": 5,
+      "forms": [
+        {
+          "slug": "daily-quality-safety-check",
+          "name": "桃金娘豆豉每日质量安全检查记录",
+          "sortOrder": 1,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "checkDate",
+              "label": "检查日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "itemNo",
+              "label": "项目序号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "checkContent",
+              "label": "检查内容",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "evaluation",
+              "label": "评价",
+              "type": "select",
+              "required": false,
+              "options": [
+                "是",
+                "否",
+                "不适用"
+              ]
+            },
+            {
+              "name": "checker",
+              "label": "checker",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 16,
+          "entryMode": "single_entry"
+        },
+        {
+          "slug": "weekly-quality-safety-report",
+          "name": "桃金娘豆豉每周质量安全排查治理报告",
+          "sortOrder": 2,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "checkDate",
+              "label": "检查日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "itemNo",
+              "label": "项目序号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "checkContent",
+              "label": "检查内容",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "evaluation",
+              "label": "评价",
+              "type": "select",
+              "required": false,
+              "options": [
+                "是",
+                "否",
+                "不适用"
+              ]
+            },
+            {
+              "name": "description",
+              "label": "情况描述",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "correctiveAction",
+              "label": "纠正措施及结果",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "checker",
+              "label": "checker",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 17,
+          "entryMode": "single_entry"
+        },
+        {
+          "slug": "monthly-quality-safety-meeting-minutes",
+          "name": "每月食品相关产品质量安全调度会议纪要",
+          "sortOrder": 3,
+          "isDocumentStyle": true,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "meetingDate",
+              "label": "会议日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "issueNo",
+              "label": "期号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "participants",
+              "label": "参会人员",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "topics",
+              "label": "会议主题",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "problems",
+              "label": "问题",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "improvementMeasures",
+              "label": "改进与纠偏措施",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "longTermMechanism",
+              "label": "长效机制",
+              "type": "textarea",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "document",
+          "sourceTableIndex": null,
+          "entryMode": "document"
+        }
+      ]
+    },
+    {
+      "slug": "sales-traceability",
+      "name": "运输销售与追溯",
+      "sortOrder": 6,
+      "forms": [
+        {
+          "slug": "product-sales-ledger",
+          "name": "产品销售台帐",
+          "sortOrder": 1,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "saleDate",
+              "label": "销售日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productionDateOrBatch",
+              "label": "生产日期/批号",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "certificateNo",
+              "label": "检验合格证号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "unitPrice",
+              "label": "单价",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "saleQuantity",
+              "label": "销售数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "stockBalance",
+              "label": "库存结余量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "buyerName",
+              "label": "购货单位名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "buyerContact",
+              "label": "购货单位联系方式",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "carrier",
+              "label": "承运者",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "saleLocation",
+              "label": "销售地点",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "recorder",
+              "label": "记录人",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 6,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "transport-delivery-record",
+          "name": "运输交付记录",
+          "sortOrder": 2,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "deliveryDate",
+              "label": "运输日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "carrier",
+              "label": "承运者",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "vehicleNo",
+              "label": "运输车号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "storageCondition",
+              "label": "货物标称储存条件",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "temperatureRecord",
+              "label": "温度记录",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "quantity",
+              "label": "数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "receiver",
+              "label": "接收人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "handoverResult",
+              "label": "交付结果",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 24,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "transport-delivery-record-alt",
+          "name": "运输交付记录（备用/第二模板）",
+          "sortOrder": 3,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "deliveryDate",
+              "label": "运输日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "carrier",
+              "label": "承运者",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "vehicleNo",
+              "label": "运输车号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "storageCondition",
+              "label": "货物标称储存条件",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "temperatureRecord",
+              "label": "温度记录",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "quantity",
+              "label": "数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "receiver",
+              "label": "接收人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "handoverResult",
+              "label": "交付结果",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 25,
+          "entryMode": "ledger_entry"
+        }
+      ]
+    },
+    {
+      "slug": "personnel-training",
+      "name": "人员健康与培训",
+      "sortOrder": 7,
+      "forms": [
+        {
+          "slug": "employee-health-file",
+          "name": "从业人员职业健康监护档案",
+          "sortOrder": 1,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "employeeName",
+              "label": "姓名",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "gender",
+              "label": "性别",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "position",
+              "label": "工作岗位",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "employeeNo",
+              "label": "员工号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "birthDate",
+              "label": "出生年月",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "startWorkDate",
+              "label": "从业时间",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "healthCertificateNo",
+              "label": "健康证号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "familyMedicalHistory",
+              "label": "家庭病史",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "archiveDate",
+              "label": "建档时间",
+              "type": "date",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 27,
+          "entryMode": "document"
+        },
+        {
+          "slug": "employee-training-record",
+          "name": "从业人员学习培训记录",
+          "sortOrder": 2,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "trainingSubject",
+              "label": "培训科目",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "lecturer",
+              "label": "授课人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "location",
+              "label": "使用场所",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "trainingTime",
+              "label": "培训时间",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "trainingMethod",
+              "label": "培训方式",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "classHours",
+              "label": "培训课时",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "purpose",
+              "label": "培训目的",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "content",
+              "label": "内容",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "assessmentResult",
+              "label": "考核结果",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 28,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "training-sign-in-sheet",
+          "name": "培训签到表",
+          "sortOrder": 3,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "trainingDate",
+              "label": "培训日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "classHours",
+              "label": "培训课时",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "content",
+              "label": "内容",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "method",
+              "label": "method",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "lecturer",
+              "label": "授课人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "department",
+              "label": "部门",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "participantName",
+              "label": "参加人员姓名",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "signature",
+              "label": "签名",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 29,
+          "entryMode": "single_entry"
+        }
+      ]
+    },
+    {
+      "slug": "complaint-accident-recall",
+      "name": "投诉事故与召回",
+      "sortOrder": 8,
+      "forms": [
+        {
+          "slug": "consumer-complaint-record",
+          "name": "消费者投诉受理记录",
+          "sortOrder": 1,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "complainantName",
+              "label": "投诉者姓名",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "contact",
+              "label": "联系方式",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "foodName",
+              "label": "食品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "quantity",
+              "label": "数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "complaintMethod",
+              "label": "投诉方式",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productionDateOrBatch",
+              "label": "生产日期/批号",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "qualityIssue",
+              "label": "投诉质量问题",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "handler",
+              "label": "处理人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "handlingResult",
+              "label": "处理结果",
+              "type": "textarea",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 30,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "food-safety-accident-disposal",
+          "name": "食品安全事故处置记录",
+          "sortOrder": 2,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "accidentName",
+              "label": "事故名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "occurredAt",
+              "label": "发生时间",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "salesArea",
+              "label": "销售区域",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "batchNo",
+              "label": "批号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "soldQuantity",
+              "label": "售出数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "stockQuantity",
+              "label": "库存数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "specification",
+              "label": "规格型号",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "involvedQuantity",
+              "label": "涉及数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "reportedAt",
+              "label": "报告时间",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "disposalMeasures",
+              "label": "处理措施",
+              "type": "textarea",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 31,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "unsafe-food-recall-execution",
+          "name": "不安全食品召回执行情况记录",
+          "sortOrder": 3,
+          "isDocumentStyle": false,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "productName",
+              "label": "产品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "recallType",
+              "label": "召回类别",
+              "type": "select",
+              "required": false,
+              "options": [
+                "主动召回",
+                "被责令召回"
+              ]
+            },
+            {
+              "name": "problemDescription",
+              "label": "存在问题",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "problemQuantity",
+              "label": "问题产品总量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "noticeStatus",
+              "label": "通知召回情况",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "recalledQuantity",
+              "label": "已召回数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "disposedQuantity",
+              "label": "处理数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "executor",
+              "label": "执行人",
+              "type": "text",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 32,
+          "entryMode": "ledger_entry"
+        },
+        {
+          "slug": "unsafe-food-recall-measures-report",
+          "name": "不安全食品召回措施报告",
+          "sortOrder": 4,
+          "isDocumentStyle": true,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "companyName",
+              "label": "企业名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "address",
+              "label": "地址",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "contactPerson",
+              "label": "联系人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "contactPhone",
+              "label": "联系电话",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "foodName",
+              "label": "食品名称",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "recallReason",
+              "label": "召回原因",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "affectedPopulation",
+              "label": "可能受影响人群",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "stagePlan",
+              "label": "阶段计划",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "expectedCompletion",
+              "label": "召回终结预期",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "disposalMeasures",
+              "label": "处理措施",
+              "type": "textarea",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "table",
+          "sourceTableIndex": 33,
+          "entryMode": "document"
+        },
+        {
+          "slug": "food-recall-progress-report",
+          "name": "食品召回阶段性进展报告",
+          "sortOrder": 5,
+          "isDocumentStyle": true,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "reportDate",
+              "label": "报告日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "noticeStatus",
+              "label": "通知召回情况",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "notifiedOperators",
+              "label": "已通知生产经营者户数",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "notifiedConsumers",
+              "label": "已通知消费者户数",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "recalledQuantity",
+              "label": "已召回数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "affectedBatches",
+              "label": "涉及批次",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productionTotal",
+              "label": "生产总量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "soldTotal",
+              "label": "已销售总量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "nextMeasures",
+              "label": "进一步措施",
+              "type": "textarea",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "document",
+          "sourceTableIndex": null,
+          "entryMode": "document"
+        },
+        {
+          "slug": "unsafe-food-recall-summary-report",
+          "name": "不安全食品召回总结报告",
+          "sortOrder": 6,
+          "isDocumentStyle": true,
+          "fields": [
+            {
+              "name": "recordDate",
+              "label": "记录日期",
+              "type": "date",
+              "required": true
+            },
+            {
+              "name": "title",
+              "label": "记录标题",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "responsiblePerson",
+              "label": "责任人",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "remarks",
+              "label": "备注",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "reportDate",
+              "label": "报告日期",
+              "type": "date",
+              "required": false
+            },
+            {
+              "name": "noticeStatus",
+              "label": "通知召回情况",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "recalledQuantity",
+              "label": "已召回数量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "affectedBatches",
+              "label": "涉及批次",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "productionTotal",
+              "label": "生产总量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "soldTotal",
+              "label": "已销售总量",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "recallRatio",
+              "label": "召回比例",
+              "type": "text",
+              "required": false
+            },
+            {
+              "name": "implementationSummary",
+              "label": "计划实施情况",
+              "type": "textarea",
+              "required": false
+            },
+            {
+              "name": "otherNotes",
+              "label": "其他情况",
+              "type": "textarea",
+              "required": false
+            }
+          ],
+          "sourceDocName": "阳江市桃金娘豆豉有限公司质量安全管理通用记录表单YJTJN-BGS-a-00002 A2026.docx",
+          "sourceKind": "document",
+          "sourceTableIndex": null,
+          "entryMode": "document"
+        }
+      ]
+    }
+  ]
+};

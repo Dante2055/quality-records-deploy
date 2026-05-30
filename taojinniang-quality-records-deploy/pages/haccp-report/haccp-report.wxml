@@ -1,0 +1,45 @@
+<view class="page haccp-page">
+  <view class="tag">HACCP CCP</view>
+  <view class="page-title">制曲关键控制点报告</view>
+  <view class="page-subtitle">按批次汇总温度、湿度、时间和纠偏措施。</view>
+
+  <view class="filter-card card">
+    <input class="input" placeholder="输入批次号筛选" value="{{batchNo}}" bindinput="onBatch" />
+    <button class="primary-btn" bindtap="generate">生成报告</button>
+  </view>
+
+  <view class="report-page card">
+    <view class="report-title">HACCP CCP 批次报告</view>
+    <view class="report-meta">批次号：{{batchNo || '全部批次'}}</view>
+    <view class="report-meta">临界值：温度 ≤ 40℃；湿度 60% - 100%</view>
+    <view class="report-meta">记录数：{{records.length}}</view>
+
+    <view wx:if="{{records.length === 0}}" class="empty">暂无制曲记录</view>
+    <view wx:else>
+      <view class="ccp-table-head">
+        <text>日期</text>
+        <text>批次</text>
+        <text>温度</text>
+        <text>湿度</text>
+        <text>结论</text>
+      </view>
+      <view class="ccp-table-row" wx:for="{{records}}" wx:key="id">
+        <text>{{item.recordDate || '-'}}</text>
+        <text>{{item.batchNo || '-'}}</text>
+        <text>{{item.data.temperature || '-'}}℃</text>
+        <text>{{item.data.humidity || '-'}}%</text>
+        <text>{{item.resultText}}</text>
+      </view>
+
+      <view class="section-title report-section-title">纠偏措施</view>
+      <view class="action-item" wx:for="{{actions}}" wx:key="id">
+        <view>{{item.batchNo || '-'}}：{{item.action || '无'}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="report-actions">
+    <button class="primary-btn report-action-btn" bindtap="exportReport">导出报告</button>
+    <button class="secondary-btn report-action-btn" bindtap="copyReport">复制报告文本</button>
+  </view>
+</view>

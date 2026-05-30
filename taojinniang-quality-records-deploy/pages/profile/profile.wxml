@@ -1,0 +1,28 @@
+<view class="page profile-page">
+  <view class="brand-card">
+    <image class="brand-logo" src="/images/logo.png" mode="aspectFill" />
+    <view>
+      <view class="brand-title">{{user.name || user.username}}</view>
+      <view class="brand-subtitle">当前登录用户</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="menu-card card" bindtap="goPassword">
+      <view>
+        <view class="menu-title">修改密码</view>
+        <view class="menu-subtitle">修改当前账号密码</view>
+      </view>
+      <view class="list-arrow">›</view>
+    </view>
+    <view class="menu-card card" bindtap="goHaccp">
+      <view>
+        <view class="menu-title">HACCP CCP 报告</view>
+        <view class="menu-subtitle">按批次查看制曲关键控制点</view>
+      </view>
+      <view class="list-arrow">›</view>
+    </view>
+  </view>
+
+  <button class="danger-btn logout-btn" bindtap="logout">退出登录</button>
+</view>

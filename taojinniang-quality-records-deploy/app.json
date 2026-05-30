@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/password/password",
+    "pages/index/index",
+    "pages/module/module",
+    "pages/forms/forms",
+    "pages/record-form/record-form",
+    "pages/record-detail/record-detail",
+    "pages/health-check-form/health-check-form",
+    "pages/records/records",
+    "pages/print/print",
+    "pages/haccp-report/haccp-report",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarTitleText": "桃金娘质量安全管理记录系统",
+    "navigationBarBackgroundColor": "#8b0f0f",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f7efe4",
+    "backgroundTextStyle": "dark"
+  },
+  "permission": {
+    "scope.camera": {
+      "desc": "用于拍摄营业执照、生产许可证等质量安全记录图片"
+    }
+  },
+  "tabBar": {
+    "color": "#6d5145",
+    "selectedColor": "#8b0f0f",
+    "backgroundColor": "#fffaf2",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab-home.png",
+        "selectedIconPath": "images/tab-home-active.png"
+      },
+      {
+        "pagePath": "pages/records/records",
+        "text": "记录",
+        "iconPath": "images/tab-records.png",
+        "selectedIconPath": "images/tab-records-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/tab-profile.png",
+        "selectedIconPath": "images/tab-profile-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

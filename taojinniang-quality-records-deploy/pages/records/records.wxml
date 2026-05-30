@@ -1,0 +1,25 @@
+<view class="page records-page">
+  <view class="page-title">记录</view>
+  <view class="page-subtitle">查看本机保存的质量安全记录。</view>
+
+  <view class="filter-card card">
+    <input class="input" placeholder="搜索标题、批次号、表单内容" value="{{keyword}}" bindinput="onKeyword" />
+    <picker mode="selector" range="{{statusOptions}}" value="{{statusIndex}}" bindchange="onStatus">
+      <view class="picker-value">{{statusOptions[statusIndex]}}</view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <view wx:if="{{records.length === 0}}" class="empty card">暂无记录</view>
+    <view class="record-list" wx:else>
+      <view class="record-card card" wx:for="{{records}}" wx:key="id" bindtap="goDetail" data-id="{{item.id}}">
+        <view class="record-main">
+          <view class="record-title-main">{{item.titleMain}}</view>
+          <view class="record-title-sub">{{item.titleSub}}</view>
+          <view class="record-meta">{{item.fillerLabel}}：{{item.data.filledBy || item.createdByName || item.createdBy || '-'}}</view>
+        </view>
+        <view class="status status-{{item.status}}">{{item.statusText}}</view>
+      </view>
+    </view>
+  </view>
+</view>

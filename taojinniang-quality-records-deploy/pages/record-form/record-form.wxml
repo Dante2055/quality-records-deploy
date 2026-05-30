@@ -1,0 +1,195 @@
+<view class="page">
+  <view class="tag">{{modeText}}</view>
+  <view class="page-title">{{form.name}}</view>
+  <view class="page-subtitle">{{form.moduleName}}</view>
+
+  <view class="form-card card section">
+    <view class="field" wx:if="{{!fillerAtEnd}}">
+      <view class="field-label">{{fillerLabel}}</view>
+      <view class="input readonly">{{lockedUserName}}</view>
+    </view>
+
+    <view class="field" wx:for="{{fields}}" wx:key="name">
+      <view wx:if="{{item.categoryTitle}}" class="field-category">{{item.categoryTitle}}</view>
+      <view class="field-label">{{item.label}} <text wx:if="{{item.required}}" class="required">*</text></view>
+
+      <input
+        wx:if="{{item.type === 'text' || item.type === 'number'}}"
+        class="input {{item.readonly ? 'readonly' : ''}}"
+        type="{{item.type === 'number' ? 'digit' : 'text'}}"
+        placeholder="请输入{{item.label}}"
+        value="{{item.value}}"
+        disabled="{{item.disabled}}"
+        data-name="{{item.name}}"
+        bindinput="onInput"
+      />
+
+      <textarea
+        wx:elif="{{item.type === 'textarea'}}"
+        class="textarea {{item.readonly ? 'readonly' : ''}}"
+        placeholder="请输入{{item.label}}"
+        value="{{item.value}}"
+        disabled="{{item.disabled}}"
+        data-name="{{item.name}}"
+        bindinput="onInput"
+      />
+
+      <picker
+        wx:elif="{{item.type === 'date'}}"
+        mode="date"
+        value="{{item.value}}"
+        disabled="{{item.disabled}}"
+        data-name="{{item.name}}"
+        bindchange="onPicker"
+      >
+        <view class="picker-value {{item.readonly ? 'readonly' : ''}}">{{item.value || '请选择日期'}}</view>
+      </picker>
+
+      <picker
+        wx:elif="{{item.type === 'time'}}"
+        mode="time"
+        value="{{item.value}}"
+        disabled="{{item.disabled}}"
+        data-name="{{item.name}}"
+        bindchange="onPicker"
+      >
+        <view class="picker-value {{item.readonly ? 'readonly' : ''}}">{{item.value || '请选择时间'}}</view>
+      </picker>
+
+      <picker
+        wx:elif="{{item.type === 'select'}}"
+        mode="selector"
+        range="{{item.options}}"
+        value="{{item.optionIndex}}"
+        disabled="{{item.disabled}}"
+        data-name="{{item.name}}"
+        bindchange="onSelect"
+      >
+        <view class="picker-value {{item.disabled ? 'readonly' : ''}}">{{item.value || item.placeholder || '请选择'}}</view>
+      </picker>
+
+      <radio-group
+        wx:elif="{{item.type === 'radio'}}"
+        class="radio-group"
+        data-name="{{item.name}}"
+        bindchange="onRadio"
+      >
+        <label class="radio-option" wx:for="{{item.options}}" wx:for-item="option" wx:key="option">
+          <radio value="{{option}}" checked="{{item.value === option}}" color="#8b0f0f" />
+          <text>{{option}}</text>
+        </label>
+      </radio-group>
+
+      <view wx:elif="{{item.type === 'healthChecks'}}" class="health-checks">
+        <view class="health-check-row" wx:for="{{item.value}}" wx:for-item="row" wx:for-index="rowIndex" wx:key="rowIndex">
+          <view class="health-row-head">
+            <text>检查记录 {{rowIndex + 1}}</text>
+            <button
+              class="health-row-remove"
+              data-name="{{item.name}}"
+              data-index="{{rowIndex}}"
+              bindtap="removeHealthCheckRow"
+            >删除</button>
+          </view>
+          <view class="health-grid">
+            <view class="health-field">
+              <view class="health-label">检查时间</view>
+              <picker
+                mode="date"
+                value="{{row.checkTime}}"
+                data-name="{{item.name}}"
+                data-index="{{rowIndex}}"
+                data-key="checkTime"
+                bindchange="onHealthCheckInput"
+              >
+                <view class="picker-value">{{row.checkTime || '请选择日期'}}</view>
+              </picker>
+            </view>
+            <view class="health-field">
+              <view class="health-label">检查单位</view>
+              <input class="input" value="{{row.checkUnit}}" placeholder="请输入检查单位" data-name="{{item.name}}" data-index="{{rowIndex}}" data-key="checkUnit" bindinput="onHealthCheckInput" />
+            </view>
+            <view class="health-field">
+              <view class="health-label">检查项目</view>
+              <input class="input" value="{{row.checkItem}}" placeholder="请输入检查项目" data-name="{{item.name}}" data-index="{{rowIndex}}" data-key="checkItem" bindinput="onHealthCheckInput" />
+            </view>
+            <view class="health-field">
+              <view class="health-label">检查结果</view>
+              <input class="input" value="{{row.checkResult}}" placeholder="请输入检查结果" data-name="{{item.name}}" data-index="{{rowIndex}}" data-key="checkResult" bindinput="onHealthCheckInput" />
+            </view>
+            <view class="health-field">
+              <view class="health-label">采取措施</view>
+              <input class="input" value="{{row.measureTaken}}" placeholder="请输入采取措施" data-name="{{item.name}}" data-index="{{rowIndex}}" data-key="measureTaken" bindinput="onHealthCheckInput" />
+            </view>
+            <view class="health-field">
+              <view class="health-label">备注</view>
+              <input class="input" value="{{row.remarks}}" placeholder="请输入备注" data-name="{{item.name}}" data-index="{{rowIndex}}" data-key="remarks" bindinput="onHealthCheckInput" />
+            </view>
+          </view>
+        </view>
+        <button class="health-add" data-name="{{item.name}}" bindtap="addHealthCheckRow">新增检查记录</button>
+      </view>
+
+      <view wx:elif="{{item.type === 'image'}}" class="image-field">
+        <view class="image-list" wx:if="{{item.images.length}}">
+          <view class="image-item" wx:for="{{item.images}}" wx:for-item="image" wx:for-index="imageIndex" wx:key="path">
+            <image
+              class="image-thumb"
+              src="{{image.path}}"
+              mode="aspectFill"
+              data-name="{{item.name}}"
+              data-index="{{imageIndex}}"
+              bindtap="previewImage"
+            />
+            <button
+              class="image-remove"
+              data-name="{{item.name}}"
+              data-index="{{imageIndex}}"
+              bindtap="removeImage"
+            >删除</button>
+          </view>
+        </view>
+        <view
+          wx:if="{{item.canAddImage}}"
+          class="image-upload"
+          data-name="{{item.name}}"
+          hover-class="image-upload-hover"
+          catchtap="chooseImage"
+        >上传图片</view>
+      </view>
+
+      <input
+        wx:else
+        class="input"
+        placeholder="请输入{{item.label}}"
+        value="{{item.value}}"
+        data-name="{{item.name}}"
+        bindinput="onInput"
+      />
+    </view>
+
+    <view class="field" wx:if="{{fillerAtEnd}}">
+      <view class="field-label">{{fillerLabel}}</view>
+      <view class="input readonly">{{lockedUserName}}</view>
+    </view>
+  </view>
+
+  <view class="history-card card section" wx:if="{{employeeHistory.length}}">
+    <view class="history-title">历史记录</view>
+    <view class="history-item" wx:for="{{employeeHistory}}" wx:key="id">
+      <view class="history-main">{{item.recordDate || item.archiveDate || '-'}} {{item.employeeName || '未填写姓名'}}</view>
+      <view class="history-meta">员工号：{{item.employeeNo || '-'}}</view>
+      <view class="history-meta">从业时间：{{item.startWorkDate || '-'}}　建档时间：{{item.archiveDate || '-'}}</view>
+      <view class="history-meta" wx:if="{{item.checkTime || item.checkUnit || item.checkResult}}">检查：{{item.checkTime || '-'}} {{item.checkUnit || ''}} {{item.checkResult || ''}}</view>
+    </view>
+  </view>
+
+  <view class="ccp-warning card" wx:if="{{ccpWarning}}">
+    <view class="ccp-warning-title">CCP 临界值提醒</view>
+    <view>{{ccpWarning}}</view>
+  </view>
+
+  <view class="bottom-actions">
+    <button class="primary-btn" bindtap="saveRecord">保存草稿</button>
+  </view>
+</view>
